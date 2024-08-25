@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+          /* Header Styles */
+          header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the header stays on top of other content */
+
+        }
+
+        .navbar {
+            padding: 1rem;
+            background-color: #111416;
+            color: white;
+            padding: 1px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 100%;
+        }
+
+        .navbar-brand img {
+            max-height: 80px;
+            margin-bottom: 5px; 
+            display: inline-block;
+            margin-left: -90px;   
+
+        }
+        @media screen and (max-width: 480px) {
+            .navbar-brand img {
+                max-height: 80px;
+                display: inline-block;
+                margin-left: 1px;
+            
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .navbar-brand img {
+            max-height: 80px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+        .navbar-nav {
+            justify-content: center;
+            flex-grow: 1;
+            padding: 2px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          
+        }
+
+        .nav-link {
+            color: white !important;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .navbar-nav .active {
+            background-color: black;
+            border-radius: 5px;
+        }
+
+
+        footer {
+            background-color: #111416;
+            padding: 1rem 0;
+            color: #ffffff;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-column h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-bottom {
+            background-color: #111416;
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-media a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .btn-primary {
+            background-color: whitesmoke;
+            color: black;
+            
+        }
+
+        .btn-primary:hover {
+            background-color: black;
+            border-color: black;
+        }
+
+        .container .text-center{
+            margin-top: 6rem;
+        }
+
+
+       
+      
+        
+    </style>
+</head>
+
+<body>
+<!-- Header Section -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="clfmm.png" alt="Christ Living Faith Miracle Ministry Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ministries.html">Ministries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sermons.html">Sermons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donations.html">Giving/Donations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary ms-lg-auto" href="signup.html">Account</a>
+              
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Ministries Page -->
+    <section class="ministries py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Ministries</h2>
+
+            <div class="row">
+                <!-- Youth Ministry -->
+                <div class="col-md-6 mb-4">
+                    <div class="ministry p-4 rounded shadow-sm">
+                        <a href="youth-ministry.html" class="text-decoration-none">
+                            <h3 class="mb-3">Youth Ministry</h3>
+                        </a>
+                        <p>Our Youth Ministry is dedicated to nurturing and empowering the younger generation with the teachings of Christ. We organize regular Bible study sessions, youth camps, and community service activities.</p>
+                    </div>
+                </div>
+
+                <!-- Women’s Fellowship -->
+                <div class="col-md-6 mb-4">
+                    <div class="ministry p-4 rounded shadow-sm">
+                        <a href="women-ministry.html" class="text-decoration-none">
+                            <h3 class="mb-3">Women’s Fellowship</h3>
+                        </a>
+                        <p>The Women’s Fellowship focuses on encouraging and supporting women in their spiritual journey. We meet regularly for prayer sessions, Bible studies, and workshops aimed at empowering women in all aspects of life.</p>
+                    </div>
+                </div>
+
+                <!-- Children’s Ministry -->
+                <div class="col-md-6 mb-4">
+                    <div class="ministry p-4 rounded shadow-sm">
+                        <a href="children-ministry.html" class="text-decoration-none">
+                            <h3 class="mb-3">Children’s Ministry</h3>
+                        </a>
+                        <p>The Children’s Ministry offers a nurturing environment where young ones can learn about God’s love and grow in their faith. Our activities include Bible stories, interactive lessons, and fun events designed to engage children in their spiritual journey.</p>
+                    </div>
+                </div>
+
+              <!-- Men’s Ministry -->
+                <div class="col-md-6 mb-4">
+                    <div class="ministry p-4 rounded shadow-sm">
+                         <a href="mens-ministry.html" class="text-decoration-none">
+                             <h3 class="mb-3">Men’s Ministry</h3>
+                        </a>
+                         <p>The Men’s Ministry focuses on encouraging and supporting men in their spiritual journey. We meet regularly for prayer sessions, Bible studies, and workshops aimed at empowering men in all aspects of life.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer Section -->
+     <!-- Footer Section -->
+     <footer style="background-color: #111416;">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-md-3 footer-column">
+                    <h3>About Us</h3>
+                    <p>Christ Living Faith Miracle Ministry is dedicated to spreading the love and teachings of Jesus Christ. We are committed to our local community and beyond.</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donations.html">Giving/Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Contact Us</h3>
+                    <p>123 Church Road, Sekondi-Takoradi, Ghana</p>
+                    <p>Email: info@clfmm.org</p>
+                    <p>Phone: +233 123 456 789</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Christ Living Faith Miracle Ministry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+   
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Optional: Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

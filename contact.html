@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+          <!-- Bootstrap CSS -->
+          <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <style>
+       /* General Styles */
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the header stays on top of other content */
+           
+
+        }
+
+        .navbar {
+            padding: 1rem;
+            background-color: #111416;
+            color: white;
+            padding: 1px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 100%;
+        }
+
+        .navbar-brand img {
+            max-height: 80px;
+            margin-bottom: 5px; 
+            display: inline-block;
+            margin-left: -90px;   
+
+        }
+        @media screen and (max-width: 480px) {
+            .navbar-brand img {
+                max-height: 80px;
+                display: inline-block;
+                margin-left: 1px;
+            
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .navbar-brand img {
+            max-height: 80px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+        .navbar-nav {
+            justify-content: center;
+            flex-grow: 1;
+            padding: 2px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          
+        }
+
+        .nav-link {
+            color: white !important;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .navbar-nav .active {
+            background-color: black;
+            border-radius: 5px;
+        }
+
+
+        footer {
+            background-color: #111416;
+            padding: 1rem 0;
+            color: #ffffff;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-column h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-bottom {
+            background-color: #111416;
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-media a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .btn-primary {
+            background-color: whitesmoke;
+            color: black;
+            
+        }
+
+        .btn-primary:hover {
+            background-color: black;
+        }
+
+        
+/* Contact Page */
+.contact-page {
+padding: 40px 20px;
+background-color: #f8f8f8;
+}
+
+.contact-page h2 {
+font-size: 36px;
+margin-bottom: 30px;
+color: #333;
+text-align: center;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+margin-bottom: 40px;
+}
+
+.contact-form-section h3 {
+font-size: 28px;
+margin-bottom: 20px;
+color: #380e3b;
+}
+
+.contact-form-section form {
+display: flex;
+flex-direction: column;
+}
+
+.contact-form-section label {
+font-size: 18px;
+color: #555;
+margin-bottom: 10px;
+}
+
+.contact-form-section input, 
+.contact-form-section textarea {
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 16px;
+}
+
+.contact-form-section button {
+background-color: #82018b;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+font-size: 18px;
+transition: background-color 0.3s ease;
+cursor: pointer;
+}
+
+.contact-form-section button:hover {
+background-color: #6f0178;
+}
+
+/* Map Section */
+.map-section {
+margin-bottom: 40px;
+}
+
+.map-section h3 {
+font-size: 28px;
+margin-bottom: 20px;
+color: #2980b9;
+}
+
+.map-container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container h2{
+    margin-top: 8rem;
+}
+
+
+/* prayer request Section */
+
+/* Style for the prayer request card */
+body {
+            background-color: #f7f9fc;
+            color: #343a40;
+        }
+
+        .header-section {
+            background-image: url('prayer-request2.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .prayer-form-section {
+            padding: 3.75rem 0;
+        }
+
+        .prayer-wall-section {
+            background-color: #f1f1f1;
+            padding: 3.75rem 0;
+        }
+
+        .prayer-item {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            background-color: #ffffff;
+        }
+
+     
+
+        .btn-secondary {
+            border-radius: 50px;
+        }
+
+       
+        </style>
+        </head>
+<body> <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="clfmm.png" alt="Christ Living Faith Miracle Ministry Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ministries.html">Ministries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sermons.html">Sermons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donations.html">Giving/Donations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary ms-lg-auto" href="signup.html">Account</a>
+                  
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Page -->
+<section class="contact-page">
+    <div class="container">
+        <h2>Contact Us</h2>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <h3>Get in Touch</h3>
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+      <!-- container Section -->
+    <!-- prayer request Section -->
+    <div class="header-section d-flex justify-content-center align-items-center">
+        <div class="container">
+            <h1 class="display-4 font-weight-bold text-uppercase">Submit Your Prayer Request</h1>
+            <p class="lead mt-4">We believe in the power of prayer. Share your prayer request with us, and our community will lift you up in prayer.</p>
+        </div>
+    </div>
+
+    <!-- Prayer Request Form Section -->
+    <section class="prayer-form-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="prayer-form bg-white p-4 rounded shadow">
+                        <h2 class="h4 mb-4">Submit a Prayer Request</h2>
+                        <form action="submit_prayer_request.html" method="post">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="request">Prayer Request</label>
+                                <textarea class="form-control" id="request" name="request" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="anonymous" name="anonymous">
+                                <label class="form-check-label" for="anonymous">Submit anonymously</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Wall Section -->
+    <section class="prayer-wall-section">
+        <div class="container">
+            <h3 class="text-center mb-5">Prayer Wall</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="prayer-item">
+                        <h4 class="prayer-title font-weight-bold mb-3">John Doe</h4>
+                        <p class="prayer-content mb-4">Please pray for my family as we go through these difficult times.</p>
+                        <button class="btn btn-secondary btn-block">Pray for John</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="prayer-item">
+                        <h4 class="prayer-title font-weight-bold mb-3">Anonymous</h4>
+                        <p class="prayer-content mb-4">I need strength and wisdom to make the right decisions in my life.</p>
+                        <button class="btn btn-secondary btn-block">Pray for Anonymous</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="prayer-item">
+                        <h4 class="prayer-title font-weight-bold mb-3">Jane Smith</h4>
+                        <p class="prayer-content mb-4">Pray for my health and recovery from illness.</p>
+                        <button class="btn btn-secondary btn-block">Pray for Jane</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Prayer Wall Section -->
+    <section class="prayer-wall-section">
+        <div class="container">
+            <h3>Prayer Wall</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="prayer-item">
+                        <h4 class="prayer-title">John Doe</h4>
+                        <p class="prayer-content">Please pray for my family as we go through these difficult times.</p>
+                        <button class="btn btn-secondary">Pray for John</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="prayer-item">
+                        <h4 class="prayer-title">Anonymous</h4>
+                        <p class="prayer-content">I need strength and wisdom to make the right decisions in my life.</p>
+                        <button class="btn btn-secondary">Pray for Anonymous</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="prayer-item">
+                        <h4 class="prayer-title">Jane Smith</h4>
+                        <p class="prayer-content">Pray for my health and recovery from illness.</p>
+                        <button class="btn btn-secondary">Pray for Jane</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Google Maps Embed Section -->
+        <section class="map-section">
+            <h3>Find Us Here</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.234484747574!2d-1.7585706845903395!3d5.256670296124814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfbac8b99a4e76241%3A0x4d9c9e146c8d4c82!2sSekondi-Takoradi%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1690467477381!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Social Media Links Section -->
+<section class="social-media-section">
+    <h3>Follow Us</h3>
+    <ul class="social-media-links">
+        <li><a href="https://web.facebook.com/clfmm"><i class="fab fa-facebook"></i> Facebook</a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+    </ul>
+</section>
+
+
+        <!-- Office Hours and Contact Details Section -->
+        <section class="contact-details-section">
+            <h3>Office Hours & Contact Info</h3>
+            <p><strong>Office Hours:</strong></p>
+            <ul>
+                <li>Monday - Friday: 9:00 AM - 5:00 PM</li>
+                <li>Saturday: 10:00 AM - 2:00 PM</li>
+                <li>Sunday: Closed</li>
+            </ul>
+            <p><strong>Address:</strong></p>
+            <address>
+                <i class="fas fa-map-marker-alt"></i> Christ Living Faith Miracle Ministry<br>
+                123 Church Street<br>
+                Sekondi-Takoradi, Ghana
+            </address>
+            <p><strong>Phone:</strong> <i class="fas fa-phone-alt"></i> +233 24 123 4567</p>
+            <p><strong>Email:</strong> <i class="fas fa-envelope"></i> <a href="mailto:info@clfmministries.org">info@clfmministries.org</a></p>
+        </section>
+        
+    </div>
+</section>
+
+     <!-- Footer Section -->
+     <footer style="background-color: #111416;">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-md-3 footer-column">
+                    <h3>About Us</h3>
+                    <p>Christ Living Faith Miracle Ministry is dedicated to spreading the love and teachings of Jesus Christ. We are committed to our local community and beyond.</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donations.html">Giving/Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Contact Us</h3>
+                    <p>123 Church Road, Sekondi-Takoradi, Ghana</p>
+                    <p>Email: info@clfmm.org</p>
+                    <p>Phone: +233 123 456 789</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Christ Living Faith Miracle Ministry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Optional: Custom JavaScript -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,585 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ Living Faith Miracle Ministry</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+    <style>
+       /* General Styles */
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the header stays on top of other content */
+
+        }
+
+        .navbar {
+            padding: 1rem;
+            background-color: #111416;
+            color: white;
+            padding: 1px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 100%;
+        }
+
+        .navbar-brand img {
+            max-height: 80px;
+            margin-bottom: 5px; 
+            display: inline-block;
+            margin-left: -50px;   
+
+        }
+        @media screen and (max-width: 480px) {
+            .navbar-brand img {
+                max-height: 80px;
+                display: inline-block;
+                margin-left: 1px;
+            
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .navbar-brand img {
+            max-height: 80px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+        .navbar-nav {
+            justify-content: center;
+            flex-grow: 1;
+            padding: 2px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          
+        }
+
+        .nav-link {
+            color: white !important;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .navbar-nav .active {
+            background-color: black;
+            border-radius: 5px;
+        }
+
+
+        footer {
+            background-color: #111416;
+            padding: 1rem 0;
+            color: #ffffff;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-column h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-bottom {
+            background-color: #111416;
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-media a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+
+
+
+        .btn-primary {
+            background-color: whitesmoke;
+            border-color: black;
+        }
+
+        .btn-primary:hover {
+            background-color: black;
+            border-color: white;
+        }
+
+        .hero {
+            position: relative;
+            height: 80vh;
+            overflow: hidden;
+        }
+
+        .hero video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .hero-overlay h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+           
+        }
+
+        .container h2{
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .container h3{
+            font-size: 1.25rem;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: -60px;
+        }
+
+        @media screen and (max-width: 468px) {
+            .hero-overlay h2 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                margin-top: 90px;
+            
+        }
+    }
+
+        .hero-overlay p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        /* hero style end*/
+
+
+        
+    
+    .devotional-section {
+        background: linear-gradient(to right, #f4f4f9, #e0e7ff);
+        padding: 4rem 0;
+    }
+    .devotional-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .devotional-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    .devotional-header {
+        margin-bottom: 2rem;
+    }
+    .devotional-header h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .devotional-content {
+        text-align: center;
+    }
+    .devotional-content p {
+        font-size: 1.1rem;
+    }
+    .devotional-image img {
+        border-radius: 15px;
+        max-width: 100%;
+    }
+    .btn-devotional {
+        background-color: whitesmoke;
+        color: black;
+        border: none;
+    }
+    .btn-devotional:hover {
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    .container h2{
+        font-size: 3.5rem;
+    }
+    .col-md-6{
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+
+    
+.event-details{
+       font-size: 1.5rem;
+       margin-top: 5rem;
+   }
+   .image-gallery{
+       margin-bottom: 4rem;
+   }
+
+    
+  
+
+
+        .alert-link{
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+
+        .alert-primary{
+            margin: 0 auto;
+            margin-top: -70px; 
+            background-color: whitesmoke;   
+ }
+
+
+    </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+ <!-- Header Section -->
+ <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="clfmm.png" alt="Christ Living Faith Miracle Ministry Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ministries.html">Ministries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sermons.html">Sermons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donations.html">Giving/Donations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary ms-lg-auto" href="signup.html">Account</a>
+                  
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section with Background Video -->
+        <section class="hero">
+            <video autoplay muted loop id="heroVideo">
+                <source src="goe.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="hero-overlay">
+                <h2>Welcome to Christ Living Faith Miracle Ministry</h2>
+                <p>Join us in faith, worship, and community</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+        </section>
+          <!-- Welcome Section -->
+    <section class="welcome-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <div class="alert alert-primary" role="alert">
+                        <p>If you are a member of Christ Living Faith, please <a href="signup.html" class="alert-link">sign up here</a> to stay connected and access exclusive member content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Introduction to the Church -->
+        <section class="introduction py-5">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="papa1.png" alt="Bishop Abraham Bruce" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Founded by Bishop Abraham Bruce, our church has been a beacon of faith in Sekondi-Takoradi. We are committed to serving our local community and spreading the message of hope and salvation through our various ministries and outreach programs.</p>
+                        <p><em style="font-weight: bold;">CHRIST LIVING FAITH!!!: "OUR GOD IS ABLE"</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Image Slider Section -->
+        <section class="image-slider py-5">
+            <div class="container">
+                <h2>Latest Programs</h2>
+                <div id="sliderExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="program3.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="program4.jpg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="program5.jpg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sliderExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sliderExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="events py-5">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <h3>Gathering of Eagles</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="goe2024.jpg" class="img-fluid" alt="Gathering-of-Eagles">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-gallery">
+                            <div class="row">
+                                <div class="col-4 mb-2">
+                                    <img src="service (7).jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img src="service (8).jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img src="service (9).jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img src="service (3).jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img src="program1.jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img src="program2.jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="event-details mt-1 text-center">
+    <h4>Annual Church Convention</h4>
+    <p>Date: August 26, 2024</p>
+    <p>Join us for a day of worship, teaching, and fellowship.</p>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Devotional -->
+      <!-- Devotional Section -->
+<section class="devotional-section">
+    <div class="container">
+        <div class="row devotional-header text-center">
+            <div class="col">
+                <h2>Daily Devotionals</h2>
+                <p>Start your day with inspiration and spiritual growth.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card devotional-card">
+                    <div class="devotional-image">
+                        <img src="morning-reflection.jpg" alt="Devotional Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Morning Reflections</h5>
+                        <p class="card-text">A peaceful and thought-provoking way to start your day with the word of God.</p>
+                        <a href="devotional-detail.html" class="btn btn-devotional">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card devotional-card">
+                    <div class="devotional-image">
+                        <img src="daily-scripture.jpg" alt="Devotional Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Daily Scripture</h5>
+                        <p class="card-text">Find a daily scripture that speaks to your heart and guides your steps.</p>
+                        <a href="devotional-detail.html" class="btn btn-devotional">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card devotional-card">
+                    <div class="devotional-image">
+                        <img src="quote.jpg" alt="Devotional Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Inspirational Quotes</h5>
+                        <p class="card-text">Daily quotes to uplift and encourage you in your spiritual journey.</p>
+                        <a href="devotional-detail.html" class="btn btn-devotional">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Page -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScagX90thjCEorv2-OY7-ur9-_yMbHmDuCUisU3Qv0omoRWXw/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+                <!-- Google Maps Embed Section -->
+                <section class="map-section mb-4">
+                    <h3>Find Us Here</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.234484747574!2d-1.7585706845903395!3d5.256670296124814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfbac8b99a4e76241%3A0x4d9c9e146c8d4c82!2sSekondi-Takoradi%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1690467477381!5m2!1sen!2sgh" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+
+            
+
+                <!-- Office Hours and Contact Details Section -->
+                <section class="contact-details-section">
+                    <h3>Office Hours & Contact Info</h3>
+                    <p><strong>Office Hours:</strong></p>
+                    <ul>
+                        <li>Monday - Friday: 9:00 AM - 5:00 PM</li>
+                        <li>Saturday: 10:00 AM - 2:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                    <p><strong>Address:</strong></p>
+                    <address>
+                        Christ Living Faith Miracle Ministry<br>
+                        123 Church Street<br>
+                        Sekondi-Takoradi, Ghana
+                    </address>
+                    <p><strong>Phone:</strong> <a href="tel:+233542367766">+233 54 236 7766</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:clfministries@gmail.com">clfministries@gmail.com</a></p>
+                </section>
+            </div>
+        </section>
+    </main>
+        
+    <!-- Footer Section -->
+    <footer style="background-color: #111416;">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-md-3 footer-column">
+                    <h3>About Us</h3>
+                    <p>Christ Living Faith Miracle Ministry is dedicated to spreading the love and teachings of Jesus Christ. We are committed to our local community and beyond.</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donations.html">Giving/Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Contact Us</h3>
+                    <p>123 Church Road, Sekondi-Takoradi, Ghana</p>
+                    <p>Email: info@clfmm.org</p>
+                    <p>Phone: +233 123 456 789</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Christ Living Faith Miracle Ministry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+   
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Optional: Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

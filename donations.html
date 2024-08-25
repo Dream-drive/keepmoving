@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations | Christ Living Faith Miracle Ministry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the header stays on top of other content */
+
+        }
+
+        .navbar {
+            padding: 1rem;
+            background-color: #111416;
+            color: white;
+            padding: 1px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 100%;
+        }
+
+        .navbar-brand img {
+            max-height: 80px;
+            margin-bottom: 5px; 
+            display: inline-block;
+            margin-left: -90px;   
+
+        }
+        @media screen and (max-width: 480px) {
+            .navbar-brand img {
+                max-height: 80px;
+                display: inline-block;
+                margin-left: 1px;
+            
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .navbar-brand img {
+            max-height: 80px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+        .navbar-nav {
+            justify-content: center;
+            flex-grow: 1;
+            padding: 2px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          
+        }
+
+        .nav-link {
+            color: white !important;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .navbar-nav .active {
+            background-color: black;
+            border-radius: 5px;
+        }
+
+
+        footer {
+            background-color: #111416;
+            padding: 1rem 0;
+            color: #ffffff;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-column h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-bottom {
+            background-color: #111416;
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-media a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .btn-primary {
+            background-color: whitesmoke;
+            color: black;
+            
+        }
+
+        .btn-primary:hover {
+            background-color: black;
+            border-color: black;
+        }
+
+
+        /* Donations Styles */
+        .donations-page {
+            padding: 60px 0;
+        }
+
+        .donations-page h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .importance, .usage, .online-donations, .offline-donations {
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .importance h3, .usage h3, .online-donations h3, .offline-donations h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .importance p, .usage ul, .online-donations p, .offline-donations ul {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .donate-button {
+            display: inline-block;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .donate-button:hover {
+            background-color: #0056b3;
+        }
+
+        .address {
+            font-style: italic;
+        }
+
+        .payment-methods img {
+            max-width: 100px;
+            margin: 0 10px;
+        }
+
+
+
+
+        .donations-page .container h2{
+            margin-top: 5rem;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="clfmm.png" alt="Christ Living Faith Miracle Ministry Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ministries.html">Ministries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sermons.html">Sermons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="donations">Giving/Donations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact">Contact</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary ms-lg-auto" href="signup">Account</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="donations-page">
+        <div class="container">
+            <h2>Support Our Ministry</h2>
+
+            <!-- Importance of Donations Section -->
+            <section class="importance">
+                <h3>Why Your Donations Matter</h3>
+                <p>Your generous donations enable us to continue our mission of spreading the teachings of Jesus Christ, supporting our community, and reaching out to those in need. Every contribution helps us to fund various church programs, maintain our facilities, and support our ministry teams.</p>
+            </section>
+
+            <!-- How Donations Are Used Section -->
+            <section class="usage">
+                <h3>How Your Donations Are Used</h3>
+                <ul>
+                    <li><strong>Community Outreach:</strong> We use donations to support our outreach programs, which include feeding the hungry, providing clothing and shelter, and offering educational support.</li>
+                    <li><strong>Church Maintenance:</strong> Your contributions help us maintain and improve our church facilities, ensuring a welcoming environment for all.</li>
+                    <li><strong>Ministry Support:</strong> Donations fund our various ministries, such as the Youth Ministry, Women's Fellowship, and Men’s Fellowship, enabling them to continue their vital work.</li>
+                    <li><strong>Missionary Work:</strong> We also allocate funds to support missionaries and their work in spreading the gospel across the world.</li>
+                </ul>
+            </section>
+
+            <!-- Thought-Provoking Question Section -->
+            <section class="thought-provoking">
+                <h3 class="text-center">Are You Ready to Make a Difference Today?</h3>
+                <p class="text-center">Imagine the impact of your generosity on those in need. Your support can transform lives and bring hope where it's most needed. Don't wait—be a beacon of light and support our mission now.</p>
+            </section>
+
+            <!-- Online Donation Methods Section -->
+            <section class="online-donations">
+                <h3>Donate Online</h3>
+                <p>We have made it easy for you to contribute online. Simply click the button below to make a secure donation through our integrated payment systems.</p>
+                <a href="payment-system.html" class="donate-button">Donate Now</a> <!-- Link this to the online donation platform -->
+                <div class="payment-methods text-center mt-4">
+                    <img src="momo.png" alt="Mobile Money" height="30px" width="100%">
+                    <img src="paypal.png" alt="Paypal">
+                    <img src="momo-visacard2.png" alt="Bank Transfer">
+                </div>
+            </section>
+
+            <!-- Offline Donation Methods Section -->
+            <section class="offline-donations">
+                <h3>Donate Offline</h3>
+                <p>If you prefer to donate offline, here are the ways you can do so:</p>
+                <ul>
+                    <li><strong>In-Person:</strong> You can make a donation during our weekly services. Look for the donation box in the church lobby or hand it directly to our ushers.</li>
+                    <li><strong>Mail:</strong> You can send a check or money order to our church office at the following address:</li>
+                    <address class="address">
+                        Christ Living Faith Miracle Ministry<br>
+                        123 Church Street<br>
+                        Sekondi-Takoradi, Ghana
+                    </address>
+                    <li><strong>Bank Transfer:</strong> You can also donate via direct bank transfer. Please contact our church office for the necessary details.</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Christ Living Faith Miracle Ministry is dedicated to spreading the love and teachings of Jesus Christ. We are committed to our local community and beyond.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donations.html">Giving/Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>123 Church Road, Sekondi-Takoradi, Ghana</p>
+                    <p>Email: info@clfmm.org</p>
+                    <p>Phone: +233 123 456 789</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Christ Living Faith Miracle Ministry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Optional: Custom JavaScript -->
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

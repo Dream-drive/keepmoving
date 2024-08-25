@@ -1,0 +1,809 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ Living Faith Miracle Ministry</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+
+    <style>
+       /* General Styles */
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the header stays on top of other content */
+            background-color: white;
+
+        }
+
+        .navbar {
+            padding: 1rem;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            padding: 1px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 100%;
+        }
+
+      
+        .navbar-brand img {
+            max-height: 80px;
+            margin-bottom: 5px; 
+            display: inline-block;
+            margin-left: -40rem;   
+
+        }
+        @media screen and (max-width: 480px) {
+            .navbar-brand img {
+                max-height: 40px;
+                display: inline-block;
+                margin-left: 1px;
+            
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .navbar-brand img {
+            max-height: 80px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+        .navbar-nav {
+            justify-content: center;
+            flex-grow: 1;
+            padding: 2px;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          
+        }
+
+        .nav-link {
+            color: black !important;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+            background-color: whitesmoke;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        
+
+
+        footer {
+            background-color: #111416;
+            padding: 1rem 0;
+            color: #ffffff;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-column h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-bottom {
+            background-color: #111416;
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-media a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+
+
+
+
+        /* Main Content Section */
+        .hero-section {
+            margin-top: 2rem;
+  background-color: #17041bd0;  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the background image */
+  height: 100vh; /* Full viewport height */
+  position: relative; /* Allows for positioning child elements */
+  color: white; /* White text color for contrast against the background */
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 480px) {
+    .hero-section .hero-title {
+        margin-top: 2rem;
+        font-size: 30px;
+}
+    .hero-section .hero-description{
+        font-size: 12px;
+    }
+    
+.btn-primary {
+  background-color: whitesmoke; /* Primary button color */
+  border-color: black; /* Primary border color */
+  color: black; /* White text color */
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+}
+}
+
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better text readability */
+  z-index: 1; /* Places the overlay behind the text content */
+}
+
+.hero-section .container {
+  z-index: 2; /* Ensures the text content appears above the overlay */
+  position: relative; /* Stacks content above the overlay */
+}
+
+.hero-title {
+  font-size: 3rem; /* Large font size for the main title */
+  font-weight: bold; /* Bold text for emphasis */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+.hero-description {
+  font-size: 1.25rem; /* Slightly larger font size for the description */
+  margin-bottom: 30px; /* Spacing below the description */
+}
+
+.btn-primary {
+  background-color: whitesmoke; /* Primary button color */
+  border-color: black; /* Primary border color */
+  color: black; /* White text color */
+}
+.btn-primary:hover {
+  background-color: rgb(14, 12, 12); /* Primary button color */
+  border-color: white; /* Primary border color */
+  color: white; /* White text color */
+}
+
+
+/* introduction Section */
+#youth-introduction {
+
+    background-color: whitesmoke;
+}
+
+
+
+/* upcoming events Section */
+#youth-upcoming-events .card:hover {
+  transform: translateY(-5px); /* Adds a subtle lift effect on hover */
+  transition: transform 0.3s ease; /* Smooth transition for the lift effect */
+}
+
+
+/* youth programs Section */
+#youth-programs .card:hover {
+  transform: translateY(-5px); /* Adds a subtle lift effect on hover */
+  transition: transform 0.3s ease; /* Smooth transition for the lift effect */
+}
+
+
+/* youth leadership Section */
+
+#youth-leadership-team .card-img-top {
+  border: 3px solid #f8f9fa; /* Adds a border around the circular image */
+}
+
+
+/* join the youth ministry Section */
+.btn-primary{
+    padding: 5px;
+    font-size: 15px;
+}
+
+    </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="clfmm.png" alt="Christ Living Faith Miracle Ministry Logo" style="margin-left: 5rem;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ministries.html">Ministries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sermons.html">Sermons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donations.html">Giving/Donations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary ms-lg-auto" href="signup.html">Account</a>
+              
+
+            </div>
+        </div>
+    </nav>
+</header>
+    
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section with Background image -->
+
+       <!-- Hero Section -->
+<section id="youth-hero" class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="hero-title">Welcome to Our Youth Ministry</h1>
+          <p class="hero-description">
+            Join a vibrant community of young believers committed to faith, fellowship, and fun. Discover your purpose, grow in Christ, and make lifelong friends.
+          </p>
+          <a href="#youth-introduction" class="btn btn-primary btn-lg mt-4">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Introduction Section -->
+<!-- Introduction Section -->
+<section id="youth-introduction" class="py-5 bg-light" style="background-color: whitesmoke;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-4 fw-bold text-primary mb-4">Youth Ministry</h2>
+          <p class="lead text-muted mb-4">
+            Welcome to the Youth Ministry of Christ Living Faith Miracle Ministry! We are a vibrant community of young individuals passionate about faith, service, and making a positive impact.
+          </p>
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5 fw-bold text-secondary">Our Mission</h3>
+                  <p class="text-muted mb-0">
+                    To empower young people to live a Christ-centered life, foster spiritual growth, and engage in meaningful service within the church and community.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5 fw-bold text-secondary">Our Vision</h3>
+                  <p class="text-muted mb-0">
+                    To build a vibrant and supportive environment where youth can develop their faith, leadership skills, and purpose in life.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Upcoming Events Section -->
+<section id="youth-upcoming-events" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-4 fw-bold text-primary mb-5">Upcoming Events</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Event 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Youth Fellowship</h5>
+              <p class="card-text text-muted">Join us for our weekly Youth Fellowship to connect, worship, and grow together in faith.</p>
+              <p class="text-muted"><small><i class="bi bi-calendar3"></i> September 15, 2024</small></p>
+            </div>
+          </div>
+        </div>
+        <!-- Event 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Youth Retreat</h5>
+              <p class="card-text text-muted">A weekend getaway for spiritual renewal, fun activities, and fellowship.</p>
+              <p class="text-muted"><small><i class="bi bi-calendar3"></i> October 5-7, 2024</small></p>
+            </div>
+          </div>
+        </div>
+        <!-- Event 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Youth Service</h5>
+              <p class="card-text text-muted">A special youth-led service with dynamic worship and an inspiring message.</p>
+              <p class="text-muted"><small><i class="bi bi-calendar3"></i> November 12, 2024</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Programs and Activities Section -->
+<section id="youth-programs" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-4 fw-bold text-primary mb-5">Programs and Activities</h2>
+          <p class="lead text-muted mb-5">Explore our diverse range of programs and activities designed to foster spiritual growth, build community, and develop leadership skills among the youth.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Program 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Bible Study Groups</h5>
+              <p class="card-text text-muted">Join our interactive Bible study groups to deepen your understanding of the Word and strengthen your faith in a supportive environment.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Program 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Youth Choir</h5>
+              <p class="card-text text-muted">Become a part of our vibrant youth choir and use your musical talents to lead worship and glorify God.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Program 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Outreach Programs</h5>
+              <p class="card-text text-muted">Participate in our outreach programs to serve the community, share the Gospel, and make a positive impact in the lives of others.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Program 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Leadership Development</h5>
+              <p class="card-text text-muted">Engage in leadership development training to enhance your skills and prepare for future leadership roles within the church and beyond.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Program 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Youth Fellowship</h5>
+              <p class="card-text text-muted">Join our weekly youth fellowship to connect with peers, build lasting friendships, and grow together in faith.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Program 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Workshops and Seminars</h5>
+              <p class="card-text text-muted">Attend workshops and seminars on various topics such as career development, financial management, and healthy relationships.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   <!-- Youth Leadership Team Section -->
+<section id="youth-leadership-team" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-4 fw-bold text-primary mb-5">Youth Leadership Team</h2>
+          <p class="lead text-muted mb-5">Meet the dedicated team leading our Youth Ministry, committed to guiding and inspiring our youth on their spiritual journey.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Leader 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="abed.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Leader 1" style="width: 120px; height: 120px; object-fit: cover;">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-secondary">Pastor Abed Quansah</h5>
+              <p class="text-muted">Youth Pastor</p>
+              <p class="card-text text-muted">Pastor Abed Quansah is passionate about youth ministry and has been serving for over 10 years, leading young people closer to Christ.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Leader 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="dee.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Leader 2" style="width: 120px; height: 120px; object-fit: cover;">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-secondary">Dennis Polley</h5>
+              <p class="text-muted">Youth Coordinator</p>
+              <p class="card-text text-muted">Dennis Polley is dedicated to organizing impactful events and activities that foster spiritual growth and fellowship among the youth.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Leader 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="abigail1.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Leader 3" style="width: 120px; height: 120px; object-fit: cover;">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-secondary">Abigail Esi Bruce</h5>
+              <p class="text-muted">Worship Leader</p>
+              <p class="card-text text-muted">Abigail Bruce leads the youth worship team with a heart for praise and worship, inspiring others through music and song.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonies Section -->
+<section id="youth-testimonies" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-4 fw-bold text-primary mb-5">Testimonies</h2>
+          <p class="lead text-muted mb-5">Hear from our youth members about how the ministry has positively impacted their lives.</p>
+        </div>
+      </div>
+  
+      <!-- Testimonies Carousel -->
+      <div id="testimoniesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Testimony 1 -->
+          <div class="carousel-item active">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body text-center">
+                <p class="card-text text-muted fst-italic">"Being a part of the youth ministry has transformed my life. The fellowship, teachings, and love I've experienced here are unparalleled."</p>
+                <h5 class="card-title fw-bold text-secondary mt-4">Sarah Johnson</h5>
+                <p class="text-muted">Youth Member</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimony 2 -->
+          <div class="carousel-item">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body text-center">
+                <p class="card-text text-muted fst-italic">"The youth ministry helped me find my purpose and strengthened my relationship with God. I am forever grateful for this community."</p>
+                <h5 class="card-title fw-bold text-secondary mt-4">Daniel Williams</h5>
+                <p class="text-muted">Youth Member</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimony 3 -->
+          <div class="carousel-item">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body text-center">
+                <p class="card-text text-muted fst-italic">"I have made lifelong friends and grown spiritually since joining the youth ministry. It has been a blessing in my life."</p>
+                <h5 class="card-title fw-bold text-secondary mt-4">Emily Brown</h5>
+                <p class="text-muted">Youth Member</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimoniesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimoniesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  
+  <!-- Join the Youth Ministry Section -->
+<section id="join-youth-ministry" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-4 fw-bold text-primary mb-4">Join the Youth Ministry</h2>
+          <p class="lead text-muted mb-5">Be a part of our vibrant Youth Ministry! Join us in our journey of faith, fellowship, and fun. We welcome all young people looking to grow spiritually and connect with a supportive community.</p>
+          <a href="#contact-form" class="btn btn-primary btn-lg mb-4">Sign Up Now</a>
+        </div>
+      </div>
+  
+      <!-- Contact Form -->
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form id="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Why Do You Want to Join?</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Share your reasons for joining" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-primary btn-lg w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Information Section -->
+<section id="contact-info" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-4 fw-bold text-primary mb-4">Contact Us</h2>
+          <p class="lead text-muted mb-5">Have questions or need more information? Get in touch with us through the following channels:</p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <!-- Contact Details -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold text-secondary">Email</h5>
+          <p class="text-muted"><a href="mailto:info@youthministry.org" class="text-decoration-none">info@youthministry.org</a></p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold text-secondary">Phone</h5>
+          <p class="text-muted"><a href="tel:+1234567890" class="text-decoration-none">+123 456 7890</a></p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold text-secondary">Follow Us</h5>
+          <a href="https://facebook.com/youthministry" class="btn btn-outline-primary btn-lg mx-1" target="_blank">Facebook</a>
+          <a href="https://twitter.com/youthministry" class="btn btn-outline-primary btn-lg mx-1" target="_blank">Twitter</a>
+          <a href="https://instagram.com/youthministry" class="btn btn-outline-primary btn-lg mx-1" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources and Materials Section -->
+<section id="resources-materials" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-4 fw-bold text-primary mb-4">Resources and Materials</h2>
+          <p class="lead text-muted mb-5">Access a range of valuable resources including study materials, sermon notes, and guides to support your spiritual journey. Click on the links below to download or access the content.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Resource Item 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-secondary">Study Materials</h5>
+              <p class="card-text text-muted">Explore our collection of study materials designed to deepen your understanding and faith. Download PDFs or view online.</p>
+              <a href="#" class="btn btn-primary btn-lg">Download Study Materials</a>
+            </div>
+          </div>
+        </div>
+        <!-- Resource Item 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-secondary">Sermon Notes</h5>
+              <p class="card-text text-muted">Access the latest sermon notes from our services. Available for download and review at your convenience.</p>
+              <a href="#" class="btn btn-primary btn-lg">View Sermon Notes</a>
+            </div>
+          </div>
+        </div>
+        <!-- Resource Item 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-secondary">Guides and Manuals</h5>
+              <p class="card-text text-muted">Find guides and manuals that offer practical advice and spiritual insights. Click below to download or read online.</p>
+              <a href="#" class="btn btn-primary btn-lg">Access Guides and Manuals</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Upcoming Projects and Initiatives Section -->
+<section id="upcoming-projects" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-4 fw-bold text-primary mb-4">Upcoming Projects and Initiatives</h2>
+          <p class="lead text-muted mb-5">Stay informed about our exciting upcoming projects and initiatives! We have a range of activities planned to engage and uplift our community. Check out what’s coming up and get involved.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Community Outreach Program</h5>
+              <p class="card-text text-muted">Join us for a community outreach program focused on supporting local families in need. We will be organizing donation drives, volunteering opportunities, and more.</p>
+              <p class="text-muted"><strong>Date:</strong> September 15, 2024</p>
+              <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Youth Retreat</h5>
+              <p class="card-text text-muted">Our annual youth retreat is a time for reflection, growth, and fellowship. Enjoy workshops, group activities, and spiritual teachings in a serene environment.</p>
+              <p class="text-muted"><strong>Date:</strong> October 10-12, 2024</p>
+              <a href="#" class="btn btn-primary btn-lg">Register Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-secondary">Charity Run for a Cause</h5>
+              <p class="card-text text-muted">Participate in our charity run to support various causes. It’s a fun way to get active and contribute to meaningful projects. All proceeds will go towards local charities.</p>
+              <p class="text-muted"><strong>Date:</strong> November 5, 2024</p>
+              <a href="#" class="btn btn-primary btn-lg">Join the Run</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Interactive Polls or Surveys Section -->
+<section id="polls-surveys" class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="display-4 fw-bold text-primary mb-4">Interactive Polls and Surveys</h2>
+                <p class="lead text-muted mb-5">We value your opinions and feedback! Participate in our polls and surveys to share your thoughts on various topics and help us improve our activities and initiatives.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Poll 1 (Replaced with Google Form) -->
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMvAOqZBG6ONy9XEX_66989VG9msHz2h6RcveH5QVrMlfyfA/viewform?embedded=true" width="100%" height="668" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Poll 2 (Placeholder for the second poll or form) -->
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <!-- You can place the second Google Form iframe here -->
+                        <!-- Example Placeholder Content -->
+                        <h5 class="card-title fw-bold text-secondary">Placeholder for Poll 2</h5>
+                        <p class="text-muted">Embed your second Google Form or another survey/poll content here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        
+    <!-- Footer Section -->
+    <footer style="background-color: #111416;">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-md-3 footer-column">
+                    <h3>About Us</h3>
+                    <p>Christ Living Faith Miracle Ministry is dedicated to spreading the love and teachings of Jesus Christ. We are committed to our local community and beyond.</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donations.html">Giving/Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Contact Us</h3>
+                    <p>123 Church Road, Sekondi-Takoradi, Ghana</p>
+                    <p>Email: info@clfmm.org</p>
+                    <p>Phone: +233 123 456 789</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Christ Living Faith Miracle Ministry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+   
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Optional: Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
