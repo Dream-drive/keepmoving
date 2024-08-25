@@ -1,1 +1,1 @@
-# keepmoving
+text-align: center; - This style is redundant here since it applies to block-level elements. If you want to center text within a parent container, ensure that the parent container has the correct centering properties# keepmoving
